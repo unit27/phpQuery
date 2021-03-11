@@ -195,9 +195,9 @@ class DOMDocumentWrapper {
 			}
 			phpQuery::debug("Full markup load (HTML), documentCreate('$charset')");
 			$this->documentCreate($charset);
-			$return = phpQuery::$debug === 2
-				? $this->document->loadHTML($markup)
-				: @$this->document->loadHTML($markup);
+			\libxml_use_internal_errors(true); // This is importan because of HTML5
+			$return = $this->document->loadHTML($markup);
+			\libxml_use_internal_errors(false); // This is importan because of HTML5
 			if ($return)
 				$this->root = $this->document;
 		}

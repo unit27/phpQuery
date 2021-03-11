@@ -1,0 +1,15 @@
+/.idea
+/nbproject
+/storage
+!/storage/.gitkeep
+/app/cache
+!/app/cache/.gitkeep
+/engine
+/libs
+/logs
+*.swp
+.DS_Store
+tapon-cards.csv
+/app/nbproject
+/app/public/.htaccess
+*.rdb
