@@ -1,7 +1,5 @@
 ## phpQuery, one more fork!
 
-**Note:** _I haven't used this package since many years, and just recently looked at the code: this is scary, buggy and unfinished. Please don't use it on any production server!_
-
 My intent is to have it easily integrated in differents projects, so available on packagist.
 I've gathered some fix and new features here and there, as will keep looking for new stuff on github about phpQuery
 
